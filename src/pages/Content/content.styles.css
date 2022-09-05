@@ -1,0 +1,59 @@
+/* .style1 .s-search-results .s-card-border {
+  border: 2px dotted blue;
+} */
+
+.style1 .s-line-clamp-4 .a-color-base.a-size-base-plus {
+  /* color: red !important; */
+}
+
+.style1 #i-title,
+.style1 #i-title+ul.a-unordered-list {
+  display: none;
+}
+
+.style1 .sg-col-inner {
+  padding: 12px;
+}
+
+.style1 .s-search-results .s-image-square-aspect {
+  /* animation: photo-spin infinite 20s linear; */
+}
+
+.style1 .s-search-results .a-text-price[data-a-strike=true] {
+  animation: pulse infinite 1s ease-in-out;
+}
+
+/* .style1 .s-search-results .a-price span[aria-hidden=true] {
+  animation: pulse infinite 1s ease-in-out;
+} */
+
+.abamazon-info-button {
+  padding: 5px;
+}
+
+@keyframes photo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    color: #565959;
+  }
+
+  30% {
+    transform: scale(1.2);
+    color: #FF0000;
+  }
+
+  to {
+    transform: scale(1);
+    color: #565959;
+  }
+}

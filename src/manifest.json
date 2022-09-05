@@ -2,16 +2,18 @@
   "manifest_version": 3,
   "name": "Chrome Extension for Amazon",
   "description": "A chrome extension that customizes the Amazon shopping experience",
-  "permissions": [
-    "webRequest",
-    "tabs"
-  ],
   "options_page": "options.html",
   "background": {
     "service_worker": "background.bundle.js"
   },
+  "permissions": [
+    "webRequest",
+    "tabs"
+  ],
   "action": {
-    "default_title": "Make this page red"
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png",
+    "default_title": "[A/B]mazon"
   },
   "chrome_url_overrides": {
     "newtab": "newtab.html"
@@ -22,9 +24,8 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*",
-        "<all_urls>"
+        "https://www.amazon.com/outlet*",
+        "https://www.amazon.com/s?bbn=17900676011*"
       ],
       "js": [
         "contentScript.bundle.js"

@@ -3,12 +3,6 @@ console.log('Put the background scripts here.');
 console.log('heysss');
 
 
-// Called when the user clicks on the action.
-function reddenPage() {
-  console.log('HEYYY');
-  document.body.style.backgroundColor = 'red';
-}
-
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   // console.log(changeInfo.url);
   // console.log('hey');
